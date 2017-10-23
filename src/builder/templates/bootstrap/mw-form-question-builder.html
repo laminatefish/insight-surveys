@@ -16,7 +16,7 @@
 
                         <div class="checkbox" ng-if="ctrl.question.type=='radio' || ctrl.question.type=='select'">
                             <label>
-                                <input type="checkbox" ng-model="ctrl.question.pageFlowModifier" ng-change="ctrl.pageFlowModifierChanged()" ng-readonly="ctrl.readOnly"> <span translate="mwForm.pageFlow.afterQuestionAnswer">Przejdź do strony w oparciu o odpowiedź</span>
+                                <input type="checkbox" ng-model="ctrl.question.pageFlowModifier" ng-change="ctrl.pageFlowModifierChanged()" ng-readonly="ctrl.readOnly"> <span translate="mwForm.pageFlow.afterQuestionAnswer">Go to page based on answer</span>
                             </label>
                         </div>
                     </div>
@@ -108,7 +108,7 @@
                     </div>
                 </div>
                 <div class="col-xs-2 text-center">
-                    <button type="button" class="btn btn-primary" ng-click="ctrl.save()" translate="mwForm.buttons.questionReady">Gotowe</button>
+                    <button type="button" class="btn btn-primary" ng-click="ctrl.save()" translate="mwForm.buttons.questionReady">Ready</button>
                 </div>
             </div>
 
@@ -171,7 +171,7 @@
                         </label>
                     </div>
                     <div class="checkbox" ng-if="ctrl.question.otherAnswer">
-                        <label><input type="checkbox"><span translate="mwForm.question.preview.otherAnswer">Inna</span>:</label>
+                        <label><input type="checkbox"><span translate="mwForm.question.preview.otherAnswer">Other</span>:</label>
                         <span class="form-inline">
                             <input type="text" class="form-control" disabled>
                         </span>
@@ -249,10 +249,10 @@
                     <div class="form-inline" style="margin-bottom: 5px">
                         <div class="form-group">
                             <label translate="mwForm.question.division.assignedSumLabel">
-                                Przydzielono
+                                Assigned
                             </label>
                             <input type="number" class="form-control strict-validation" style="width: 80px" readonly value="0">
-                            <span>{{ctrl.question.unit}} <span translate="mwForm.question.division.fromRequiredLabel">z wymaganych</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}</span>
+                            <span>{{ctrl.question.unit}} <span translate="mwForm.question.division.fromRequiredLabel">from required</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}</span>
                         </div>
 
                     </div>

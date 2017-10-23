@@ -19,7 +19,7 @@
                     </md-input-container>
                     <div flex flex-offset-gt-md="5">
                         <md-checkbox  ng-if="ctrl.question.type=='radio' || ctrl.question.type=='select'" ng-model="ctrl.question.pageFlowModifier" ng-change="ctrl.pageFlowModifierChanged()" ng-readonly="ctrl.readOnly" aria-label="Go to page">
-                            <span translate="mwForm.pageFlow.afterQuestionAnswer">Przejdź do strony w oparciu o odpowiedź</span>
+                            <span translate="mwForm.pageFlow.afterQuestionAnswer">Go to page based on answer</span>
                         </md-checkbox>
 
 
@@ -191,7 +191,7 @@
                         <div layout="row" layout-align="start center" class="mw-question-other-answer"  ng-if="ctrl.question.otherAnswer">
                             <div>
                                 <md-radio-button disabled>
-                                    <span translate="mwForm.question.preview.otherAnswer">Inna</span>:
+                                    <span translate="mwForm.question.preview.otherAnswer">Other</span>:
                                 </md-radio-button>
                             </div>
 
@@ -215,7 +215,7 @@
                     <div layout="row" layout-align="start center" class="mw-question-other-answer" ng-if="ctrl.question.otherAnswer">
                         <div>
                             <md-checkbox disabled >
-                                <span translate="mwForm.question.preview.otherAnswer">Inna</span>:
+                                <span translate="mwForm.question.preview.otherAnswer">Other</span>:
                             </md-checkbox>
                         </div>
 
@@ -316,7 +316,7 @@
                             <md-input-container md-no-float>
                                 <input type="number" class="form-control strict-validation" style="width: 80px" readonly value="0">
                             </md-input-container>
-                            <span>{{ctrl.question.unit}} <span translate="mwForm.question.division.fromRequiredLabel">z wymaganych</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}</span>
+                            <span>{{ctrl.question.unit}} <span translate="mwForm.question.division.fromRequiredLabel">from required</span> <strong>{{ctrl.question.quantity}}</strong> {{ctrl.question.unit}}</span>
                         </div>
                     </div>
                 </div>
